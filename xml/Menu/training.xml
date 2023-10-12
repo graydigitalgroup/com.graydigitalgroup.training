@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/trainings/record</path>
+    <page_callback>CRM_Training_Form_TrainingRecord</page_callback>
+    <title>Training Record</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>

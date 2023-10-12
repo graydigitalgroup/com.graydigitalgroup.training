@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<extension key="com.graydigitalgroup.training" type="module">
+  <file>training</file>
+  <name>Training</name>
+  <description>An extention to add Continuing Education Training records to contacts.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>graydigitalgroup</author>
+    <email>development@graydigitalgroup.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/graydigitalgroup/com.graydigitalgroup.training</url>
+    <url desc="Documentation">https://github.com/graydigitalgroup/com.graydigitalgroup.training</url>
+    <url desc="Support">https://github.com/graydigitalgroup/com.graydigitalgroup.training/issues</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2022-03-18</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Training</namespace>
+    <angularModule>crmTraining</angularModule>
+    <format>22.05.2</format>
+  </civix>
+  <mixins>
+    <mixin>menu-xml@1.0.0</mixin>
+    <mixin>mgd-php@1.0.0</mixin>
+  </mixins>
+</extension>

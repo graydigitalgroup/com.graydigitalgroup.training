@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Training</base>
+  <class>TrainingType</class>
+  <name>training_type</name>
+  <comment>FIXME</comment>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique Type ID</comment>
+    <html>
+      <type>Number</type>
+    </html>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>name</name>
+    <title>Training Type</title>
+    <type>varchar</type>
+    <length>128</length>
+    <required>true</required>
+  </field>
+  <index>
+    <name>index_training_name</name>
+    <fieldName>name</fieldName>
+    <unique>true</unique>
+  </index>
+
+  <field>
+    <name>description</name>
+    <title>Training Type Description</title>
+    <type>varchar</type>
+    <length>255</length>
+    <html>
+      <type>TextArea</type>
+      <rows>6</rows>
+      <cols>50</cols>
+      <label>Description</label>
+    </html>
+  </field>
+
+  <field>
+    <name>is_active</name>
+    <title>Training Type Is Active</title>
+    <type>boolean</type>
+    <comment>Is this training type enabled?</comment>
+    <html>
+      <type>CheckBox</type>
+    </html>
+  </field>
+
+</table>

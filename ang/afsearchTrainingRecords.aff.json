@@ -1,0 +1,7 @@
+{
+	"title": "Training Records",
+	"permission": "edit all contacts",
+	"type": "search",
+	"contact_summary": "tab",
+	"server_route": ""
+}
