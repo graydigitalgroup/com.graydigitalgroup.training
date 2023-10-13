@@ -53,7 +53,7 @@ ENGINE=InnoDB;
 -- *******************************************************/
 CREATE TABLE `training_record` (
   `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Unique Record ID',
-  `type_id` int unsigned NOT NULL COMMENT 'FK to training_type.id',
+  `type_id` int unsigned NOT NULL COMMENT 'FK to TrainingType',
   `contact_id` int unsigned NOT NULL COMMENT 'FK to Contact',
   `label` varchar(255) COMMENT 'Identifier for the training item',
   `description` text COMMENT 'Full description of record. Text and html allowed.',
@@ -61,7 +61,6 @@ CREATE TABLE `training_record` (
   `credits` int unsigned DEFAULT NULL COMMENT 'The number of credits awarded for the record.',
   `entry_date` date DEFAULT NULL COMMENT 'Date the record was made.',
   PRIMARY KEY (`id`),
-  INDEX `index_type_id`(type_id),
   CONSTRAINT FK_training_record_type_id FOREIGN KEY (`type_id`) REFERENCES `training_type`(`id`) ON DELETE CASCADE,
   CONSTRAINT FK_training_record_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE CASCADE
 )

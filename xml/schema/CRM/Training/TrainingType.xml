@@ -5,6 +5,7 @@
   <class>TrainingType</class>
   <name>training_type</name>
   <comment>FIXME</comment>
+  <labelField>name</labelField>
   <log>true</log>
 
   <field>
@@ -13,6 +14,7 @@
     <required>true</required>
     <comment>Unique Type ID</comment>
     <html>
+      <label>ID</label>
       <type>Number</type>
     </html>
   </field>
