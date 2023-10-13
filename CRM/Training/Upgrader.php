@@ -76,12 +76,12 @@ class CRM_Training_Upgrader extends CRM_Extension_Upgrader_Base {
 	 * @return TRUE on success
 	 * @throws Exception
 	 */
-	// public function upgrade_1000(): bool {
-	// 	$this->ctx->log->info('Applying CiviRule Actions');
-	// 	// this path is relative to the extension base dir
-	// 	$this->executeSqlFile('sql/insertTrainingAction.sql');
-	// 	return TRUE;
-	// }
+	public function upgrade_1000(): bool {
+		$this->ctx->log->info('Creating CiviRule Actions for Training');
+		// this path is relative to the extension base dir
+		$this->executeSqlFile('sql/insertTrainingAction.sql');
+		return TRUE;
+	}
 
 
   /**

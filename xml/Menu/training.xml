@@ -6,4 +6,10 @@
     <title>Training Record</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/civirules/actions/training</path>
+    <page_callback>CRM_Training_CivirulesActions_Form_Create</page_callback>
+    <title>Create</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
